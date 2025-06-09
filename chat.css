@@ -1,0 +1,130 @@
+/* 기존 유지 */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #edf7ef;
+  font-family: '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+}
+
+.chat-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  max-height: 720px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 28px rgba(24, 133, 59, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 32px;
+}
+
+.chat-header {
+  background: #78cd9d;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fdfb;
+}
+
+.message {
+  max-width: 80%;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 18px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.bot {
+  background: #e5fdea;
+  color: #222;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+.user {
+  background: #18853b;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.input-area {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  outline: none;
+}
+
+.input-area button {
+  margin-left: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #228b43;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* ✅ 사진 안내 텍스트 + 버튼 한 줄 정렬 및 우측 정렬 */
+.photo-inline-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;  /* 오른쪽 정렬 */
+  gap: 12px;
+  margin: 12px 16px 0 auto;
+}
+
+.photo-message-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+}
+
+.photo-button {
+  background-color: #228b43;  /* 진한 초록 */
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.photo-button:hover {
+  background-color: #1f7a3a; /* hover 시 살짝 더 어둡게 */
+  transform: translateY(-1px);
+}

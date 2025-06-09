@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>피부질환 진단 챗봇</title>
+  <link rel="stylesheet" href="chat.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">🌱피부진단 챗봇 피피🌱</div>
+    <div class="chat-body" id="chat-body">
+      <div class="message bot">
+        <p>안녕하세요!👋 <strong>SkinX의 피부진단 챗봇 ‘피피’</strong>입니다.</p>
+        <p>궁금한 피부 증상이나 걱정되는 부위가 있다면 편하게 말씀해 주세요. 정확한 상담과 진단을 도와드릴게요 😊</p>
+      </div>
+    </div>
+    <form class="input-area" id="chat-form">
+      <input type="text" id="user-input" placeholder="메시지를 입력하세요..." autocomplete="off" />
+      <button type="submit">전송</button> 
+    </form>    
+    <script src="chat.js"></script>
+  </body>
+</html>
